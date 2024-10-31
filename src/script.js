@@ -94,7 +94,7 @@ function changeQuote() { //upgrade 3. Changes the quote.
 
 function changeImage() { //upgrade 4. Changes the image.
     if (score >= 15000) {
-        banana_button.src = "/Images/squished-banana.png"
+        banana_button.src = "./Images/squished-banana.png"
     }
     display_price.innerHTML = 15000;
 }
