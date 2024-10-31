@@ -19,6 +19,8 @@ let addedWorker = 0;
 //These are needed in order to listen for specific events.
 //In this case, it listens for the "Click" event and goes to their assigned function
 banana_button.addEventListener("click", button_function);
+banana_button.addEventListener("mousedown", function() {banana_button.src = "./Images/squished-banana.png"});
+banana_button.addEventListener("mouseup", function() {banana_button.src = "./Images/delicious-banana.png"});
 consumeBanana.addEventListener("click", eatBanana);
 upgrade1.addEventListener("click", clickIncrease);
 upgrade1.addEventListener("mouseover", function() {display_price.innerHTML = upgradePrice})
@@ -36,7 +38,7 @@ function button_function() { //Main part of the website. Click to gain function
     score++;
     if (increase > 0) {
         score = score + increase;
-    } 
+    }
 
     display_price.innerHTML = 0;
     display_score.innerHTML = score;        
