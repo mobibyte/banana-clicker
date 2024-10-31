@@ -21,6 +21,8 @@ let addedWorker = 0;
 banana_button.addEventListener("click", button_function);
 consumeBanana.addEventListener("click", eatBanana);
 upgrade1.addEventListener("click", clickIncrease);
+upgrade1.addEventListener("mouseover", function() {display_price.innerHTML = upgradePrice})
+upgrade1.addEventListener("mouseleave", function() {display_price.innerHTML = 0});
 upgrade2.addEventListener("click", buyFarmer);
 upgrade3.addEventListener("click", changeQuote);
 upgrade4.addEventListener("click", changeImage);
